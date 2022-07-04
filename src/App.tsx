@@ -1,6 +1,7 @@
 import "./App.css";
 import { Greet } from "./components/greet";
 import { GreetList } from "./components/greetList";
+import { Header } from "./components/header";
 import { Status } from "./components/status";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       />
       <GreetList nameList={nameList} />
       <Status status={"data"}/>
+      <Header>I am a header</Header>
     </div>
   );
 };

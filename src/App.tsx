@@ -6,6 +6,7 @@ import { Header } from "./components/header";
 import { Input } from "./components/Input";
 import { ReactNode } from "./components/ReactNode";
 import { Status } from "./components/status";
+import { Styles } from "./components/Styles";
 
 const App = () => {
   const nameList = [
@@ -28,6 +29,7 @@ const App = () => {
       </ReactNode>
       <Button handleClick={(e, id) => console.log("clicked", id)} />
       <Input handleChange={(e, text) => console.log(text)} />
+      <Styles styles={{color:"white",backgroundColor:"black"}}/>
     </div>
   );
 };

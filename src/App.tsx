@@ -1,5 +1,6 @@
 import "./App.css";
 import { Button } from "./components/Button";
+import { ExplicitUstate } from "./components/ExplicitUstate";
 import { Greet } from "./components/greet";
 import { GreetList } from "./components/greetList";
 import { Header } from "./components/header";
@@ -32,6 +33,8 @@ const App = () => {
       <Input handleChange={(e, text) => console.log(text)} />
       <Styles styles={{color:"white",backgroundColor:"black"}}/>
       <Ustate/>
+      <ExplicitUstate/>
+
     </div>
   );
 };

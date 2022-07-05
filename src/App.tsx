@@ -8,6 +8,7 @@ import { Input } from "./components/Input";
 import { ReactNode } from "./components/ReactNode";
 import { Status } from "./components/status";
 import { Styles } from "./components/Styles";
+import { UseRed } from "./components/useRed";
 import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
 
@@ -32,11 +33,11 @@ const App = () => {
       </ReactNode>
       <Button handleClick={(e, id) => console.log("clicked", id)} />
       <Input handleChange={(e, text) => console.log(text)} />
-      <Styles styles={{color:"white",backgroundColor:"black"}}/>
-      <Ustate/>
-      <ExplicitUstate/>
-      <UseStateTypeAssertion/>
-
+      <Styles styles={{ color: "white", backgroundColor: "black" }} />
+      <Ustate />
+      <ExplicitUstate />
+      <UseStateTypeAssertion />
+      <UseRed />
     </div>
   );
 };

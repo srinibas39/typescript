@@ -8,6 +8,7 @@ import { Input } from "./components/Input";
 import { ReactNode } from "./components/ReactNode";
 import { Status } from "./components/status";
 import { Styles } from "./components/Styles";
+import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
       <Styles styles={{color:"white",backgroundColor:"black"}}/>
       <Ustate/>
       <ExplicitUstate/>
+      <UseStateTypeAssertion/>
 
     </div>
   );

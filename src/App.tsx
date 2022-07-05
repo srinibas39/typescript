@@ -1,4 +1,5 @@
 import "./App.css";
+import { AuthCon } from "./components/AuthCon";
 import { Button } from "./components/Button";
 import { ExplicitUstate } from "./components/ExplicitUstate";
 import { Greet } from "./components/greet";
@@ -40,6 +41,7 @@ const App = () => {
       <UseStateTypeAssertion />
       <UseRed />
       <UseCon/>
+      <AuthCon/>
     </div>
   );
 };

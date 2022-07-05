@@ -7,6 +7,7 @@ import { Input } from "./components/Input";
 import { ReactNode } from "./components/ReactNode";
 import { Status } from "./components/status";
 import { Styles } from "./components/Styles";
+import { Ustate } from "./components/Ustate";
 
 const App = () => {
   const nameList = [
@@ -30,6 +31,7 @@ const App = () => {
       <Button handleClick={(e, id) => console.log("clicked", id)} />
       <Input handleChange={(e, text) => console.log(text)} />
       <Styles styles={{color:"white",backgroundColor:"black"}}/>
+      <Ustate/>
     </div>
   );
 };

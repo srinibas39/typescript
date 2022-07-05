@@ -8,6 +8,7 @@ import { Input } from "./components/Input";
 import { ReactNode } from "./components/ReactNode";
 import { Status } from "./components/status";
 import { Styles } from "./components/Styles";
+import { UseCon } from "./components/UseCon";
 import { UseRed } from "./components/useRed";
 import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
@@ -38,6 +39,7 @@ const App = () => {
       <ExplicitUstate />
       <UseStateTypeAssertion />
       <UseRed />
+      <UseCon/>
     </div>
   );
 };

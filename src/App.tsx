@@ -17,6 +17,7 @@ import { UseCon } from "./components/UseCon";
 import { UseRed } from "./components/useRed";
 import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
+import { List } from "./Genrics/List";
 
 const App = () => {
   const nameList = [
@@ -47,8 +48,20 @@ const App = () => {
       <UseCon />
       <AuthCon />
       <DomRef />
-      <MutableRef/>
+      <MutableRef />
       <Private isLoggedIn={true} component={Profile} />
+      {/* <List
+        items={["ram", "sham", "dham"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+      <List
+        items={[
+          { id: 0, first: "srinibas", last: "khuntia" },
+          { id: 1, first: "rahul", last: "mishra" },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 };

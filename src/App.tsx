@@ -1,4 +1,6 @@
 import "./App.css";
+import { Private } from "./Component Prop/Private";
+import { Profile } from "./Component Prop/profile";
 import { AuthCon } from "./components/AuthCon";
 import { Button } from "./components/Button";
 import { DomRef } from "./components/DomRef";
@@ -46,6 +48,7 @@ const App = () => {
       <AuthCon />
       <DomRef />
       <MutableRef/>
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 };

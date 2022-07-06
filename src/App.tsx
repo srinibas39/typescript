@@ -18,6 +18,7 @@ import { UseRed } from "./components/useRed";
 import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
 import { List } from "./Genrics/List";
+import { RestrictingProps } from "./RestrictingProps/RestrictingProps";
 
 const App = () => {
   const nameList = [
@@ -62,6 +63,7 @@ const App = () => {
         ]}
         onClick={(item) => console.log(item)}
       />
+      <RestrictingProps value={-10} isNegative/>
     </div>
   );
 };

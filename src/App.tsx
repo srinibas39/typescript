@@ -20,6 +20,7 @@ import { Ustate } from "./components/Ustate";
 import { List } from "./Genrics/List";
 import { RestrictingProps } from "./RestrictingProps/RestrictingProps";
 import { ToastPosition } from "./TemplateLiteralAndExclude/ToastPosition";
+import { WrappingHTML } from "./WrappingHTML/WrappingHTML";
 
 const App = () => {
   const nameList = [
@@ -64,8 +65,9 @@ const App = () => {
         ]}
         onClick={(item) => console.log(item)}
       />
-      <RestrictingProps value={-10} isNegative/>
-      <ToastPosition position={"top-right"}/>
+      <RestrictingProps value={-10} isNegative />
+      <ToastPosition position={"top-right"} />
+      <WrappingHTML />
     </div>
   );
 };

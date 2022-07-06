@@ -19,6 +19,7 @@ import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
 import { List } from "./Genrics/List";
 import { RestrictingProps } from "./RestrictingProps/RestrictingProps";
+import { ToastPosition } from "./TemplateLiteralAndExclude/ToastPosition";
 
 const App = () => {
   const nameList = [
@@ -64,6 +65,7 @@ const App = () => {
         onClick={(item) => console.log(item)}
       />
       <RestrictingProps value={-10} isNegative/>
+      <ToastPosition position={"top-right"}/>
     </div>
   );
 };

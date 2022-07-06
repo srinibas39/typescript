@@ -1,11 +1,13 @@
 import "./App.css";
 import { AuthCon } from "./components/AuthCon";
 import { Button } from "./components/Button";
+import { DomRef } from "./components/DomRef";
 import { ExplicitUstate } from "./components/ExplicitUstate";
 import { Greet } from "./components/greet";
 import { GreetList } from "./components/greetList";
 import { Header } from "./components/header";
 import { Input } from "./components/Input";
+import { MutableRef } from "./components/MutableRef";
 import { ReactNode } from "./components/ReactNode";
 import { Status } from "./components/status";
 import { Styles } from "./components/Styles";
@@ -40,8 +42,10 @@ const App = () => {
       <ExplicitUstate />
       <UseStateTypeAssertion />
       <UseRed />
-      <UseCon/>
-      <AuthCon/>
+      <UseCon />
+      <AuthCon />
+      <DomRef />
+      <MutableRef/>
     </div>
   );
 };

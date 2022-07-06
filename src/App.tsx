@@ -17,6 +17,7 @@ import { UseCon } from "./components/UseCon";
 import { UseRed } from "./components/useRed";
 import { UseStateTypeAssertion } from "./components/UseStateTypeAssertion";
 import { Ustate } from "./components/Ustate";
+import { CustButton } from "./ExtractingProp/CustButton";
 import { List } from "./Genrics/List";
 import { RestrictingProps } from "./RestrictingProps/RestrictingProps";
 import { ToastPosition } from "./TemplateLiteralAndExclude/ToastPosition";
@@ -68,6 +69,11 @@ const App = () => {
       <RestrictingProps value={-10} isNegative />
       <ToastPosition position={"top-right"} />
       <WrappingHTML />
+      <CustButton
+        name={{ first: "srinibas", last: "khuntia" }}
+        count={1}
+        isLoggedin={true}
+      />
     </div>
   );
 };
